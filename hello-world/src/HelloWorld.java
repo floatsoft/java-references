@@ -46,7 +46,7 @@ public class HelloWorld {
     public static void main(String[] args) {
 
         /**
-         * The System class, among other class fields and methods, contains the standard
+         * The System class contains, among other class fields and methods, the standard
          * output stream field, out.
          * See https://docs.oracle.com/javase/7/docs/api/java/lang/System.html
          * 
