@@ -14,7 +14,9 @@
  * In our example, we could also use the default access level by not including
  * any access modifier.
  */
+
 public class HelloWorld {
+
     /**
      * A method declares executable code.
      * See https://docs.oracle.com/javase/specs/jls/se7/html/jls-8.html#jls-8.4
@@ -40,7 +42,9 @@ public class HelloWorld {
      * The method name and argument types make up the method signature.
      * See https://docs.oracle.com/javase/specs/jls/se7/html/jls-8.html#jls-8.4.2
      */
+
     public static void main(String[] args) {
+
         /**
          * The System class, among other class fields and methods, contains the standard
          * output stream field, out.
@@ -54,6 +58,7 @@ public class HelloWorld {
          * separator string.
          * See https://docs.oracle.com/javase/7/docs/api/java/io/PrintStream.html#println(java.lang.String)
          */
+
         System.out.println("Hello World");
 
     }
