@@ -1,3 +1,9 @@
+# os
+.DS_Store
+
+# intelliJ
+.idea/
+
 # Compiled class file
 *.class
 
