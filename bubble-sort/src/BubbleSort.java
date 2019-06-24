@@ -17,7 +17,7 @@ public class BubbleSort {
 
     /**
      * We declare a static variable named unsortedNumbersList, with the private access modifier.
-     * See https://github.com/floatsoft/java-references/blob/hello-world/hello-world/src/VariableDeclaration.java#L8-L28
+     * See https://github.com/floatsoft/java-references/blob/hello-world/hello-world/src/VariableDeclaration.java#L8-L33
      * See https://github.com/floatsoft/java-references/blob/master/hello-world/src/HelloWorld.java#L6-L9
      *
      * unsortedNumbersList is declared with the type int[], meaning that it is an array containing values of the
@@ -26,6 +26,13 @@ public class BubbleSort {
      * for a particular variable, or both.
      * See https://github.com/floatsoft/java-references/blob/hello-world/hello-world/src/VariableDeclaration.java#L11
      * See https://docs.oracle.com/javase/specs/jls/se7/html/jls-10.html#jls-10.2
+     *
+     * unsortedNumbersList is initialized with the following array: {8, 5, 6, 9, 3, 1, 4, 2, 7, 10}
+     * Java supports the C-style curly braces {} construct for creating an array and initializing its elements when it
+     * is declare. An array object of the proper type and length is implicitly created, and the values of the
+     * comma-separated list of expressions are assigned to its elements.
+     * See https://github.com/floatsoft/java-references/blob/hello-world/hello-world/src/VariableDeclaration.java#L18-L21
+     * See https://www.oreilly.com/library/view/learning-java-4th/9781449372477/ch04s07.html#learnjava3-CHP-4-SECT-7.2
      *
      * unsortedNumbersList is a one-dimensional array.
      * See https://en.wikipedia.org/wiki/Array_data_structure#One-dimensional_arrays
