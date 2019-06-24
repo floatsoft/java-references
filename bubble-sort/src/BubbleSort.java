@@ -1,10 +1,15 @@
+/**
+ * This is an implementation of the bubble sort algorithm written in Java.
+ * See https://en.wikipedia.org/wiki/Bubble_sort#Implementation
+ */
+
 import java.util.Arrays;
 
 public class BubbleSort {
 
-    static Integer[] unsortedNumbersList = {8, 5, 6, 9, 3, 1, 4, 2, 7, 10};
+    private static int[] unsortedNumbersList = {8, 5, 6, 9, 3, 1, 4, 2, 7, 10};
 
-    public static Integer[] bubbleSort(Integer[] arr) {
+    public static int[] bubbleSort(int[] arr) {
 
         Boolean swapped;
 
