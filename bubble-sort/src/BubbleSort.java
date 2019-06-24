@@ -3,6 +3,10 @@
  * See https://en.wikipedia.org/wiki/Bubble_sort#Implementation
  */
 
+/**
+ * The Arrays class imported from java.util.Arrays contains various methods for manipulating arrays.
+ * See https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html
+ */
 import java.util.Arrays;
 
 public class BubbleSort {
