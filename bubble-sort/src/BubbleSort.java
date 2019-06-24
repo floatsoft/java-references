@@ -1,2 +1,45 @@
+import java.util.Arrays;
+
 public class BubbleSort {
+
+    static Integer[] unsortedNumbersList = {8, 5, 6, 9, 3, 1, 4, 2, 7, 10};
+
+    public static Integer[] bubbleSort(Integer[] arr) {
+
+        Boolean swapped;
+
+        do {
+            swapped = false;
+
+            for (int i = 0; i < arr.length - 1; i++) {
+                System.out.println("before: " + Arrays.toString(arr));
+
+                if (arr[i] > arr[i + 1]) {
+                    var tmp = arr[i];
+
+                    arr[i] = arr[i + 1];
+
+                    arr[i + 1] = tmp;
+
+                    swapped = true;
+
+                    System.out.println("after: " + Arrays.toString(arr));
+                }
+            }
+        } while (swapped);
+
+        System.out.println("final: " + Arrays.toString(arr));
+
+        return arr;
+
+    }
+
+    public static void main(String[] args) {
+
+        bubbleSort(unsortedNumbersList);
+
+    }
+
+
 }
+
