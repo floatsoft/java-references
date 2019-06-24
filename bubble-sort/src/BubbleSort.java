@@ -9,6 +9,10 @@
  */
 import java.util.Arrays;
 
+/**
+ * We declare a public class named BubbleSort.
+ * See https://github.com/floatsoft/java-references/blob/master/hello-world/src/HelloWorld.java#L1-L18
+ */
 public class BubbleSort {
 
     private static int[] unsortedNumbersList = {8, 5, 6, 9, 3, 1, 4, 2, 7, 10};
