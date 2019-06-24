@@ -15,6 +15,11 @@ public class VariableDeclaration {
      * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
      * See https://docs.oracle.com/javase/7/docs/api/java/lang/String.html
      *
+     * In our example, helloWorldString is initialized with the character string "Hello World" using the semantics of
+     * an assignment to our declared variable.
+     * See https://docs.oracle.com/javase/specs/jls/se7/html/jls-8.html#jls-8.3.2
+     * See https://docs.oracle.com/javase/specs/jls/se7/html/jls-15.html#jls-15.26
+     *
      * We declare a variable of the type String named helloWorldString with the private access modifier.
      * See https://github.com/floatsoft/java-references/blob/master/hello-world/src/HelloWorld.java#L6-L9
      *
