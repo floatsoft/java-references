@@ -78,3 +78,7 @@ public class BubbleSort {
 
 }
 
+/**
+ * The easiest way to run this code is by opening it in an IDE, such as IntelliJ
+ * IDEA, and selecting run 'HelloWorld' from the interface.
+ */
