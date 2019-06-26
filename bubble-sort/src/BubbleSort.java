@@ -55,6 +55,14 @@ public class BubbleSort {
      */
     public static int[] bubbleSort(int[] arr) {
 
+        /**
+         * We declare a Boolean named swapped, we do not initiate it with a value as the next lines will make our
+         * initialization redundant. However, primitives and objects in Java have specific default values, for
+         * instance the default value of our boolean will be false.
+         * byte, short, int, long, float, double, char, boolean, and String (or any object) have the default default
+         * values of 0, 0, 0, oL, 0.0f, 0.0d, "\u0000", false, and null respectively.
+         * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+         */
         Boolean swapped;
 
         do {
