@@ -16,7 +16,7 @@ import java.util.Arrays;
 public class BubbleSort {
 
     /**
-     * We declare a static variable named unsortedNumbersList, with the private access modifier.
+     * We declare a static field named unsortedNumbersList with the private access modifier.
      * See https://github.com/floatsoft/java-references/blob/hello-world/hello-world/src/VariableDeclaration.java#L8-L33
      * See https://github.com/floatsoft/java-references/blob/master/hello-world/src/HelloWorld.java#L6-L9
      *
@@ -39,6 +39,20 @@ public class BubbleSort {
      */
     private static int[] unsortedNumbersList = {8, 5, 6, 9, 3, 1, 4, 2, 7, 10};
 
+    /**
+     * We declare a private static method named bubbleSort.
+     * See https://github.com/floatsoft/java-references/blob/master/hello-world/src/HelloWorld.java#L20-L46
+     * See https://github.com/floatsoft/java-references/blob/master/hello-world/src/HelloWorld.java#L6-L9
+     *
+     * bubbleSort returns a value of type int[], meaning that it returns an array containing values of the
+     * primitive type int.
+     * See https://docs.oracle.com/javase/tutorial/java/javaOO/returnvalue.html
+     * See https://github.com/floatsoft/java-references/blob/bubble-sort/bubble-sort/src/BubbleSort.java#L23-L28
+     *
+     * the bubbleSort method takes a single formal parameters; arr. the arr parameter specifier contains the type int[],
+     * therefore arr must be an array of integers. In our example arr will receive unsortedNumbersList as it's argument.
+     * See https://github.com/floatsoft/java-references/blob/master/hello-world/src/HelloWorld.java#L37-L40
+     */
     public static int[] bubbleSort(int[] arr) {
 
         Boolean swapped;
