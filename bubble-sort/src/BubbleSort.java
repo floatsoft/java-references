@@ -67,8 +67,9 @@ public class BubbleSort {
 
         /**
          * The do...while statement creates a loop that executes it's block until the
-         * test condition evaluates to false.
-         * The do...while loop will always run at least once.
+         * test condition evaluates to false. The while statement evaluates it's expression, 
+         * which must return a boolean value.
+         * Unlike the while loop, the do...while loop will always execute at least once.
          * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html
          */
         do {
