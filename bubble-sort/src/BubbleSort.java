@@ -56,14 +56,14 @@ public class BubbleSort {
     public static int[] bubbleSort(int[] arr) {
 
         /**
-         * We declare a Boolean named swapped, we do not initiate it with a value as the next lines will make our
+         * We declare a boolean named swapped, we do not initiate it with a value as the next lines will make our
          * initialization redundant. However, primitives and objects in Java have specific default values, for
          * instance the default value of our boolean will be false.
          * byte, short, int, long, float, double, char, boolean, and String (or any object) have the default default
          * values of 0, 0, 0, oL, 0.0f, 0.0d, "\u0000", false, and null respectively.
          * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
          */
-        Boolean swapped;
+        boolean swapped;
 
         /**
          * The do...while statement creates a loop that executes it's block until the
@@ -73,6 +73,13 @@ public class BubbleSort {
          * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html
          */
         do {
+            /**
+             * We assign our boolean variable named swapped to false, one of the data types only two possible values,
+             * the other value being true.
+             * See https://github.com/floatsoft/java-references/blob/bubble-sort/bubble-sort/src/BubbleSort.java#L42-L56
+             * Anticipating that the loop must run more than once, we use the below line to ensure that it will
+             * eventually end.
+             */
             swapped = false;
 
             for (int i = 0; i < arr.length - 1; i++) {
