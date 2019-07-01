@@ -67,10 +67,14 @@ public class BubbleSort {
 
         /**
          * The do...while statement creates a loop that executes it's block until the
-         * test condition evaluates to false. The while statement evaluates it's expression, 
+         * test condition evaluates to false. The while statement evaluates it's expression,
          * which must return a boolean value.
          * Unlike the while loop, the do...while loop will always execute at least once.
          * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html
+         *
+         * A block is a group of zero or more statements between balanced braces and can be used anywhere a single
+         * statement is allowed.
+         * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/expressions.html
          */
         do {
             /**
@@ -82,7 +86,36 @@ public class BubbleSort {
              */
             swapped = false;
 
+            /**
+             * The for statement creates a loop that consists of three optional expressions; the initialization,
+             * termination, and increment expressions.
+             * Following the expressions is the block to be executed.
+             * See https://github.com/floatsoft/java-references/blob/bubble-sort/bubble-sort/src/BubbleSort.java#L75-L77
+             * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/for.html
+             *
+             * We initialize our for loop by declaring an int named i assigned the integer value 0.
+             * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/datatypes.html
+             * This serves as our initialization expression, in this case used to initialize a counter.
+             *
+             * The condition of our for loop must be met before each loop iteration.
+             * In this case i must be less than the length of arr - 1.
+             * See https://www.geeksforgeeks.org/length-vs-length-java/
+             * If the expression evaluates to false, execution skips to the first expression following the block.
+             *
+             * For our final-expression we increment our int i by 1 using the ++ unary operator.
+             * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html
+             * This occurs before the next evaluation of condition.
+             *
+             * Following our expressions is our block, this block contains our main sorting logic.
+             * See https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/block
+             */
             for (int i = 0; i < arr.length - 1; i++) {
+                /**
+                 * We print our array using the println method just before entering the adjacent pair comparison and
+                 * subsequent sorting logic of our bubbleSort method.
+                 * See https://github.com/floatsoft/java-references/blob/master/hello-world/src/HelloWorld.java#L48-L62
+                 * See https://en.wikipedia.org/wiki/Bubble_sort#Step-by-step_example
+                 */
                 System.out.println("before: " + Arrays.toString(arr));
 
                 if (arr[i] > arr[i + 1]) {
@@ -94,11 +127,19 @@ public class BubbleSort {
 
                     swapped = true;
 
+                    /**
+                     * We print our array again using the println method just after the swap takes place.
+                     * See https://en.wikipedia.org/wiki/Bubble_sort#Step-by-step_example
+                     */
                     System.out.println("after: " + Arrays.toString(arr));
                 }
             }
         } while (swapped);
 
+        /**
+         * We print our array once more using the println method; unsortedNumbersList is now sorted in ascending order.
+         * See https://en.wikipedia.org/wiki/Bubble_sort#Step-by-step_example
+         */
         System.out.println("final: " + Arrays.toString(arr));
 
         return arr;
