@@ -204,6 +204,12 @@ public class BubbleSort {
          */
         System.out.println("final: " + Arrays.toString(arr));
 
+        /**
+         * Any method that is not declared void must contain a return statement.
+         * The return statement ends function execution and specifies a value to be returned to the function caller.
+         * As promised in our static method declaration we now return an array of integers, arr.
+         * See https://github.com/floatsoft/java-references/blob/bubble-sort/bubble-sort/src/BubbleSort.java#L47-L50
+         */
         return arr;
 
     }
