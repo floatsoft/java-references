@@ -214,8 +214,16 @@ public class BubbleSort {
 
     }
 
+    /**
+     * We declare our main method.
+     * See https://github.com/floatsoft/java-references/blob/hello-world/hello-world/src/HelloWorld.java#L20-L46
+     */
     public static void main(String[] args) {
 
+        /**
+         * Within our main method we invoke our bubbleSort method, passing unsortedNumbersList an argument.
+         * See https://docs.oracle.com/javase/tutorial/reflect/member/methodInvocation.html
+         */
         bubbleSort(unsortedNumbersList);
 
     }
@@ -225,5 +233,5 @@ public class BubbleSort {
 
 /**
  * The easiest way to run this code is by opening it in an IDE, such as IntelliJ
- * IDEA, and selecting run 'HelloWorld' from the interface.
+ * IDEA, and selecting run 'BubbleSort' from the interface.
  */
