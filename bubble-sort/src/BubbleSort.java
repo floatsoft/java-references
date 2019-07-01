@@ -191,6 +191,11 @@ public class BubbleSort {
                     System.out.println("after: " + Arrays.toString(arr));
                 }
             }
+            /**
+             * The condition of the while portion of our do-while statement is that is must run at least once and
+             * until swapped evaluates to false.
+             * See https://github.com/floatsoft/java-references/blob/bubble-sort/bubble-sort/src/BubbleSort.java#L68-L79
+             */
         } while (swapped);
 
         /**
