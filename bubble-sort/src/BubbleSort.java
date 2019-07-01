@@ -145,7 +145,16 @@ public class BubbleSort {
                  * Here we use our variable i and the sum of i + 1 as our indexes.
                  */
                 if (arr[i] > arr[i + 1]) {
-                    var tmp = arr[i];
+
+                    /**
+                     * We assign the value of arr[i] to a variable named tmp.
+                     * See https://github.com/floatsoft/java-references/blob/hello-world/hello-world/src/VariableDeclaration.java#L8-L33
+                     *
+                     * We do this so that we do not lose the value of arr[i] during the swapping process, as we are
+                     * doing our element swapping in-place.
+                     * See https://en.wikipedia.org/wiki/In-place_algorithm
+                     */
+                    int tmp = arr[i];
 
                     arr[i] = arr[i + 1];
 
