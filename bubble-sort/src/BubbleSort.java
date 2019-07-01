@@ -115,6 +115,16 @@ public class BubbleSort {
                  * subsequent sorting logic of our bubbleSort method.
                  * See https://github.com/floatsoft/java-references/blob/master/hello-world/src/HelloWorld.java#L48-L62
                  * See https://en.wikipedia.org/wiki/Bubble_sort#Step-by-step_example
+                 *
+                 * One of the methods contained in our Array class is the toString method which Returns a string
+                 * representation of the contents of the specified array.
+                 * See https://github.com/floatsoft/java-references/blob/bubble-sort/bubble-sort/src/BubbleSort.java#L6-L10
+                 * See https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html#toString(int[])
+                 *
+                 * By default in Java an array is printed as the arrays class name followed by its hash value.
+                 * See https://docs.oracle.com/javase/specs/jls/se7/html/jls-10.html#jls-10.8
+                 *
+                 * We use the toString method here so that we can print a readable representation of our array.
                  */
                 System.out.println("before: " + Arrays.toString(arr));
 
