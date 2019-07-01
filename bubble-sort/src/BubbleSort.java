@@ -128,6 +128,22 @@ public class BubbleSort {
                  */
                 System.out.println("before: " + Arrays.toString(arr));
 
+                /**
+                 * An if-then statement executes it's block only if a specified condition evaluates to true.
+                 * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/if.html
+                 *
+                 * Our if condition is described just before our block.
+                 * Our condition dictates that arr[i] must be greater than arr[i + 1] using the greater than operator.
+                 * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/opsummary.html
+                 *
+                 * As a reminder, arr represents the single argument being passed to our bubbleSort function,
+                 * unsortedNumbersList, and arr must be an Array.
+                 * See https://github.com/floatsoft/java-references/blob/bubble-sort/bubble-sort/src/BubbleSort.java#L18-L40
+                 *
+                 * We can select elements from our array by referencing there index enclosed by [ and ], i.e: arr[i].
+                 * See https://docs.oracle.com/javase/specs/jls/se7/html/jls-10.html#jls-10.4
+                 * Here we use our variable i and the sum of i + 1 as our indexes.
+                 */
                 if (arr[i] > arr[i + 1]) {
                     var tmp = arr[i];
 
