@@ -43,8 +43,8 @@ public class VariableDeclaration {
         /**
          * We pass helloWorldString as an argument to the println method to print "Hello World" to our terminal.
          * See https://github.com/floatsoft/java-references/blob/bubble-sort/hello-world/src/HelloWorld.java#L48-L62
+         * See https://docs.oracle.com/javase/tutorial/java/javaOO/arguments.html
          */
-
         System.out.println(helloWorldString);
 
     }
