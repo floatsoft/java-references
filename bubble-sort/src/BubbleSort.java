@@ -66,10 +66,10 @@ public class BubbleSort {
         boolean swapped;
 
         /**
-         * The do...while statement creates a loop that executes it's block until the
+         * The do-while statement creates a loop that executes it's block until the
          * test condition evaluates to false. The while statement evaluates it's expression,
          * which must return a boolean value.
-         * Unlike the while loop, the do...while loop will always execute at least once.
+         * Unlike the while loop, the do-while loop will always execute at least once.
          * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/while.html
          *
          * A block is a group of zero or more statements between balanced braces and can be used anywhere a single
@@ -147,7 +147,7 @@ public class BubbleSort {
                 if (arr[i] > arr[i + 1]) {
 
                     /**
-                     * We assign the value of arr[i] to a variable named tmp.
+                     * We assign the value of arr[i] to a variable named tmp of type int.
                      * See https://github.com/floatsoft/java-references/blob/hello-world/hello-world/src/VariableDeclaration.java#L8-L33
                      *
                      * We do this so that we do not lose the value of arr[i] during the swapping process, as we are
@@ -156,10 +156,32 @@ public class BubbleSort {
                      */
                     int tmp = arr[i];
 
+                    /**
+                     * Our condition for this block to be executed is that arr[i] must be greater than arr[i + 1],
+                     * therefore these elements must be swapped in order to sort our array in ascending order.
+                     * See https://en.wikipedia.org/wiki/Sorting_algorithm
+                     *
+                     * We assign arr[i] with the value of arr[i + 1] in-place using our assignment operator, =, to
+                     * accomplish the first half of our swap.
+                     * See https://docs.oracle.com/javase/tutorial/java/nutsandbolts/op1.html
+                     */
                     arr[i] = arr[i + 1];
 
+                    /**
+                     * We now complete our swap by assigning arr[i + 1] to the value of tmp which is equal to the
+                     * previous value of arr[i].
+                     */
                     arr[i + 1] = tmp;
 
+                    /**
+                     * Finally, our boolean named swapped is reassigned to true since a swap has indeed occurred.
+                     * This means that the condition of our do-while loop will be met.
+                     * It is obvious then that our do-while loop must continue to execute until this block statement no
+                     * longer executes, and subsequently our boolean named swapped is never reassigned.
+                     * In other words the condition of our if statement dictating that arr[i] must be greater than
+                     * arr[i + 1] must evaluate to a false for each element pair in our array, arr, in order for our
+                     * code to exit our do-while loop.
+                     */
                     swapped = true;
 
                     /**
